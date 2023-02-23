@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script src="./jquery-1.10.2.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./option.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Auto File Upload</h2>
+
+      <div class="form-group">
+        <label for="email">URL (upload file URL):</label>
+
+        <input
+          accept="image/jpeg, image/png, image/gif, image/heic, image/heif, image/tiff, image/webp"
+          multiple=""
+          class="form-control"
+          placeholder="Enter URL"
+          name="UploadFile"
+          onchange="readURL(event)"
+          id="uploadFile" 
+          type="file"
+          autocomplete="off"
+          tabindex="-1"
+          class="styles_input__NGR8Y"
+          multiple="multiple"
+        />
+      </div>
+     <div class="imgDiv" id="imgContainer">
+
+     </div>
+      <!-- <button id="submit" class="btn btn-default">Submit</button> -->
+    </div>
+  </body>
+</html>

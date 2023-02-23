@@ -1,0 +1,89 @@
+<!-- Copyright 2017 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file. -->
+<html>
+  <head>
+    <title>Water Popup</title>
+    <style>
+      body {
+        text-align: center;
+        align-content: center;
+        width: 100%;
+        font-family: sans-serif;
+        min-width: 500px;
+        min-height: 450px;
+        background-color: #FFFAFA;
+      }
+
+      .appcontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .successMsg {
+        display: none;
+        margin-right: 60px;
+        margin-top: 19px;
+        font-weight: 200;
+        color: green;
+      }
+
+      #saveURL {
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: "Source Sans Pro", sans-serif;
+        padding: 6px 18px;
+        background-color: #4183d7 !important;
+        color: white;
+      }
+      #optionPage {
+        text-decoration: underline;
+        color: cornflowerblue;
+        cursor: pointer;
+      }
+      .appTitle {
+        font-size: LARGE;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-right: 20px;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        gap: 10px;
+
+        margin-left: 15%;
+      }
+
+      #targetURL {
+        height: 200px;
+      }
+    </style>
+
+    <script src="./jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div class="appTitle">Auto-File Uploader</div>
+    <div class="appContainer">
+      <p style="font-size: 16">
+        You can save the URLs in this text box. So, that it will be used while
+        doing auto-upload operations.
+      </p>
+      <p style="font-size: 10">
+        NOTE: If you giving more URLs seperate them with character '|' Eg:
+        URL1|URL2|URL3
+      </p>
+
+      <div class="options">
+        <textarea id="targetURL" placeholder="URL"></textarea>
+        <button class="button" id="saveURL">Save URL</button>
+      </div>
+
+      <div class="successMsg">URL Saved!!!!!!!!!!</div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

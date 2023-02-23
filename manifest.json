@@ -1,0 +1,24 @@
+{
+  "name": "Auto File uploader",
+  "description": "Demonstration or POC for upload Image into market place area ",
+  "version": "1.0",
+  "options_page": "option.html",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["jquery-1.10.2.js", "contentscript.js"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+
+  "action": {
+    "default_title": "File Uploader.",
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "icons": {}
+}
