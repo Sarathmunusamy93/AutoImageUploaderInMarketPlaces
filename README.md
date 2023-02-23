@@ -1,17 +1,18 @@
 ### Features
 
-- Helps to give feedback for the all websites (including blogs)
-- View the list of all feedback in one place.
+- This will helps you to upload the image in market place automatically.
+- The image urls which you going to upload can be set in the popup page of this extension.
+- The configured image will be uploaded on page load without any manual intraction.
 
 
 # Screenshots
 
-> Feedback panel:
+> Input Image getter popup:
 
-![](https://github.com/Sarathmunusamy93/WebPageFeedbacker/blob/main/ScreenShots/popPage.jpg?raw=true)
+![](https://github.com/Sarathmunusamy93/AutoImageUploaderInMarketPlaces/blob/main/ScreenShots/InputPage.jpg?raw=true)
 
-> Feedback list:
+> Auto Upload on page load with configured image:
 
-![](https://github.com/Sarathmunusamy93/WebPageFeedbacker/blob/main/ScreenShots/optionsPage.jpg?raw=true)
+![](https://github.com/Sarathmunusamy93/AutoImageUploaderInMarketPlaces/blob/main/ScreenShots/OutFill%20Images.jpg?raw=true)
 
 
